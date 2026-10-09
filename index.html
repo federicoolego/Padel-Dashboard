@@ -1,4 +1,14 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fede Pádel Stats</title><link rel="stylesheet" href="styles.css"></head><body>
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Fede Pádel Stats</title>
+        <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>" />
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
 <div id="auth" class="auth"><form id="login"><div class="ball">●</div><small>ACCESO PRIVADO</small><h1>Fede Pádel Stats</h1><p>Ingresá con tu usuario de Supabase.</p><label>Email<input id="email" type="email" required></label><label>Contraseña<input id="password" type="password" required></label><button>Ingresar</button><p id="error" class="error"></p></form></div>
 <header><b>FEDE <i>PÁDEL STATS</i></b><div><span id="last"></span><button id="logout">Salir</button></div></header><main><section class="hero"><div><small>RENDIMIENTO PERSONAL</small><h1>Tu temporada, en números.</h1></div><div class="filters"><label>Año<select id="year"></select></label><label>Formato<select id="format"><option value="ALL">Todos</option></select></label><label>Cancha<select id="court"><option value="ALL">Todas</option></select></label><button id="reset">Limpiar</button></div></section><section id="kpis" class="kpis"></section>
 <section class="grid main"><article class="card"><h2>Partidos y efectividad por mes</h2><div class="chart tall"><canvas id="monthly"></canvas></div></article><article class="card"><h2>Balance de resultados</h2><div class="chart"><canvas id="balance"></canvas></div></article></section>
