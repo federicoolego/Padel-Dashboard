@@ -1,13 +1,8 @@
-# Fede Pádel Stats v4
+# Fede Pádel Stats v5
 
-Dashboard privado conectado directamente a Supabase.
+Dashboard privado con dos vistas: Partidos y Torneos. Conectado a `partidos_view` y `torneos_view` de Supabase.
 
-## Configuración requerida en Supabase
-
-1. Crear al menos un usuario en Authentication > Users.
-2. Habilitar RLS en las tablas base.
-3. Permitir SELECT solamente al rol authenticated.
-4. Asegurar que `partidos_view` y `torneos_view` sean consultables por authenticated.
-5. En Authentication > URL Configuration agregar la URL publicada de GitHub Pages en Site URL y Redirect URLs.
-
-La publishable key incluida en `config.js` puede utilizarse en frontend. No incluir una secret key ni service_role.
+- Ejecutar desde un servidor local o GitHub Pages.
+- Crear el usuario en Supabase Authentication.
+- Dar `SELECT` al rol `authenticated` sobre ambas vistas y bloquear `anon`.
+- No usar secret key ni service_role en este repositorio.
